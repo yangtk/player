@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    height:100%;
+}
+body{
+    font-size:12px;
+    font-family:Lantinghei SC,Helvetica Neue,Microsoft YaHei,Arial,sans-serif;    
+}
+.bg {
+    width:100%; 
+    height:100%;
+    background:url(../img/6.jpg) center center/cover;
+    filter: url(blur.svg#blur);
+    -webkit-filter: blur(18px);
+}
+.wrapper {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.wrapper .head {
+    width:100%;
+    height:50px;
+    padding:20px 0;
+    text-align:center;
+}
+.wrapper .center {
+    width:100%;
+    height:390px;
+    overflow:hidden;
+}
+.wrapper .center .Turntable{
+    width:100%;
+    height:300px;
+    text-align:center;
+}
+.center .Turntable .needle{
+    position: relative;
+    left: 30px;
+    top: -20px;
+    z-index: 4;
+    width: 85px;
+}
+.center .Turntable .disk {
+    position: absolute;
+    left: 50%;
+    top: 143px;
+    margin-left: -125px;
+    width: 250px;
+    height: 250px;
+
+}
+.center .disk .disk-cover{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 96%;
+    height: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,.2);
+}
+.center .disk .disk-cover-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+}
+.wrapper .footer{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.footer .progress {
+    text-align:center;
+    line-height:20px;
+    color:white;
+}
+.footer .progress .currentTime{
+
+}
+.footer .progress .progress-bar{
+    position:relative;
+    display:inline-block;
+    width:240px;
+    height:20px;
+    margin:0 10px;
+    vertical-align:bottom;
+}
+.footer .progress-bar div {
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:9px;
+    height:2px;
+}
+.footer .progress-bar .progress-all {
+    width:100%;
+    background:#615D5C;
+}
+.footer .progress-bar .progress-ready{
+    width:50%;
+    background:#B1ADAC;
+}
+.footer .progress-bar .progress-cur{
+    width:30%;
+    background:red;
+}
+.footer .progress-bar .progress-cur .btn-cur{
+    position: absolute;
+    right: -8px;
+    top: -7px;
+    width: 15px;
+    height: 15px;
+    background: #eee;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0.5);
+}
+.footer .control {
+    width: 100%;
+    text-align:center;
+}
+.footer .control span {
+    display:inline-block;
+    margin:10px 7px;
+}
+
+.footer .control .loop{
+    width:36px;
+    height:36px;
+    background: url(../img/control/play_icn_loop.png) no-repeat;
+}
+.footer .control .pre{
+    width:50px;
+    height:50px;
+    background: url(../img/control/play_btn_prev.png) no-repeat;
+}
+.footer .control .play{
+    width:70px;
+    height:70px;
+    background: url(../img/control/play_rdi_btn_pause.png) no-repeat;
+}
+.footer .control .play.on {
+    background: url(../img/control/play_rdi_btn_play.png) no-repeat;
+}
+.footer .control .next{
+    width:50px;
+    height:50px;
+    background: url(../img/control/play_btn_next.png) no-repeat;
+}
+.footer .control .list{
+    width:36px;
+    height:36px;
+    background: url(../img/control/play_icn_src.png) no-repeat;
+}
+
+
+
+
+
+
