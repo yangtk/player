@@ -1,105 +1,67 @@
-是的我在网站修改了。连标签都不给
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器练习</title>
+<link rel="stylesheet" href="css/milk.css">
+<script>
+</script>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="wrapper">
 
-<div class="card communicationRight {{menuOff}} minHeight ">
-	<!-- 面包屑 -->
-	<div class="top_crumb">
-		<ul class="clearfix">
-			<li>
-				<a href="#">
-					<i class="top_home"></i>首页bbbbbb
-				</a>
-				<i class="icon-arrow-right"></i>
-			</li>
-			<li>
-				<a href="#">航道险情sssssss</a>
-			</li>
-		</ul>
-	</div>
-	<!-- end 面包屑 -->
+        <div class="head">
+            <h1>DUDUDU</h1>
+            <p>Standing Egg</p>
+        </div>
 
+        <div class="center">
 
-    <h2 style="margin:20px; font-weight:bold;">参数依次是：提示文字、  图标、  数字1或2表示几个按钮、  其他提示文字、  点击确定按钮执行函数、  点击取消按钮执行函数</h2>
+            <div class="Turntable">
+                <img src="img/play_needle.png" class="needle">
 
-    
+                <div class="disk">
+                    <img class="disk-cover" src="img/6.jpg" alt="封面" width="100%" height="100%">
+                    <img class="disk-cover-bg" src="img/play_disc.png" alt="封面装饰" width="100%" height="100%">
+                </div>
+            </div>
 
-    <div style="margin:20px;color:#999;">
-        <p class="mb10">
-            <span>tipLayer.sm('测试提示框');</span>
-            <button class="button">提示</button>
-            <p class="mb10"><img width="152" src="images/wait_del/11.png" alt=""></p>
-        </p>
-        <p class="mb10">
-            <span>tipLayer.lg('保存失败!','tip-error');</span>
-            <button class="button">错误</button>
-            <p class="mb10"><img width="256" src="../images/wait_del/22.png" alt=""></p>
-        </p>
-        <p class="mb20">
-            <span>tipLayer.lg('保存成功!','tip-success');</span>
-            <button class="button">成功</button>
-            <p class="mb10"><img width="256" src="../images/wait_del/33.png" alt=""></p>
-        </p>
-        <p class="mb10">
-            <span>tipLayer.lg('保存失败!','tip-error',1,'可能的其他提示，确定吗？',function(){alert('执行本函数')} );</span>
-            <button class="button">错误，有‘确认’按钮</button>
-            <p class="mb10"><img width="261" src="../images/wait_del/44.png" alt=""></p>
-        </p>
-        <p class="mb30">
-            <span>tipLayer.lg('修改成功!','tip-success',2,'可能的其他提示，确定吗？',function(){alert(111)},'close');</span>
-            <button class="button">成功，有‘确认’、‘取消’按钮</button>
-            <p class="mb10"><img width="275" src="../images/wait_del/55.png" alt=""></p>
-        </p>
-        <p class="mb10">
-            <span>tipLayer.lg('修改成功!','no-icon',2,'',function(){alert(111)},function(){alert(222)});</span>
-            <button class="button">无图标 + 两个按钮</button>
-            <p class="mb10"><img width="274" src="../images/wait_del/66.png" alt=""></p>
-        </p>
-        <p class="mb10">
-            <span>tipLayer.lg('修改成功!','no-icon',2,'',function(){alert(111)},function(){alert(222)},'按钮文字1','按钮文字2');</span>
-            <button class="button">按钮文字</button>
-            <p class="mb10"><img width="348" src="../images/wait_del/77.png" alt=""></p>
-        </p>
+            <div class="Lyrics"></div>
+        </div>
+
+        <div class="footer">
+
+            <div class="progress">
+                <span class="currentTime">00:00</span>
+                <div class="progress-bar">
+                    <div class="progress-all"></div>
+                    <div class="progress-ready"></div>
+                    <div class="progress-cur">
+                        <span class="btn-cur"></span>
+                    </div>
+                </div>
+                <span class="total-time">00:00</span>
+            </div>
+
+            <div class="control">
+                <span class="loop"></span>
+                <span class="pre"></span>
+                <span class="play on" id="player"></span>
+                <span class="next"></span>
+                <span class="list"></span>
+            </div>
+        </div>
+
     </div>
 
-
-    <script>
-		require(['tipLayer'],function(tipLayer){
-			$('.button').eq(0).click(function(){
-					tipLayer.sm('测试提示框','tip-tip');
-			})
-			$('.button').eq(1).click(function(){
-					tipLayer.lg('保存失败!','tip-error');
-			})
-			$('.button').eq(2).click(function(){
-					tipLayer.lg('保存成功!','tip-success');
-			})
-			$('.button').eq(3).click(function(){
-					tipLayer.lg('保存失败!','tip-error',1,'可能的其他提示，确定吗？',function(){alert('执行本函数')} );
-			})
-			$('.button').eq(4).click(function(){
-					tipLayer.lg('修改成功!','tip-success',2,'可能的其他提示，确定吗？',function(){alert(111)},'close');
-			})
-            $('.button').eq(5).click(function(){
-                    tipLayer.lg('修改成功!','no-icon',2,'',function(){alert(111)},function(){alert(222)});
-            })
-            $('.button').eq(6).click(function(){
-                    tipLayer.lg('修改成功!','no-icon',2,'',function(){alert(111)},function(){alert(222)},'按钮文字1','按钮文字2');
-            })
-		})
-
-
-
-    // function yourFN(){
-    //      // window.open('http://www.baidu.com') ;
-    //     alert('yourFN')
-    // }
-    // function quxiao(){
-    //      // window.open('http://www.baidu.com') ;
-    //     alert('你点击了取消，执行函数')
-    // }
-
-    </script>
-
-
-
-
+<div style="display:none;">
+    <audio id="audio1" src="files/朴树 - Baby ，До свидания (达尼亚).mp3"></audio>
 </div>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
