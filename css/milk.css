@@ -147,9 +147,10 @@ body{
     width:70px;
     height:70px;
     background: url(../img/control/play_rdi_btn_pause.png) no-repeat;
+    background: url(../img/control/play_rdi_btn_play.png) no-repeat;
 }
 .footer .control .play.on {
-    background: url(../img/control/play_rdi_btn_play.png) no-repeat;
+    background: url(../img/control/play_rdi_btn_pause.png) no-repeat;
 }
 .footer .control .next{
     width:50px;
