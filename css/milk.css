@@ -45,6 +45,22 @@ body{
     top: -20px;
     z-index: 4;
     width: 85px;
+
+    transform-origin: 16px 16px;
+    -webkit-transform-origin: 16px 16px;
+
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    
+}
+.center .Turntable .needle.in{    
+
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
 }
 .center .Turntable .disk {
     position: absolute;
@@ -54,6 +70,25 @@ body{
     width: 250px;
     height: 250px;
 
+    animation:rotate-disk 20s infinite normal linear;
+    -webkit-animation:rotate-disk 20s infinite normal linear;
+    animation-play-state: paused; 
+    -webkit-animation-play-state: paused; 
+}
+.center .Turntable .disk.rotate {
+    animation-play-state: running; 
+    -webkit-animation-play-state: running;
+}
+@keyframes rotate-disk {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes rotate-disk {
+    100% {
+        -webkit-transform: rotateZ(360deg);
+    }
 }
 .center .disk .disk-cover{
     position: absolute;
@@ -72,6 +107,8 @@ body{
     left:0;
     z-index:3;
 }
+
+
 .wrapper .footer{
     position: absolute;
     left:0;
