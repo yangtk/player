@@ -25,6 +25,7 @@ var aCtrls = document.querySelectorAll('.control span') //五个按钮
 var oNeedle = document.querySelector('.needle')
 var oDisk = document.querySelector('.disk')
 var oTotalTime = document.querySelector('.total-time')
+var oCurrentTime = document.querySelector('.currentTime')
 var onOff = true;
 
 var player = { // 播放器对象
@@ -48,9 +49,13 @@ player.totalTime = function(){
     var sec = Math.floor(oA.duration%60);
     return addZero(min) +":"+addZero(sec);
 }
+player.currentTime = function(){
+    return oA.currentTime;
+}
 
 player.init = function(){
     oTotalTime.innerHTML = player.totalTime();
+    oCurrentTime.innerHTML = player.currentTime();
 }
 
 window.onload = function(){
